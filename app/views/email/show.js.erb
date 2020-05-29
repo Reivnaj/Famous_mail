@@ -1,0 +1,6 @@
+$('#email-object').empty().append("<%= j @email.object %>")
+$('#email-body').empty().append("<%= j @email.body %>")
+$('#email-body').append("<%= j render 'btn'%>")
+$('#email').click(function() {
+    $(this).removeClass("disabled");
+  });
